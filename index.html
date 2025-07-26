@@ -23,20 +23,29 @@
     <meta name="twitter:description" content="Explore projects, skills, and background of Sangam Thapa, a full stack developer from Nepal.">
     <meta name="twitter:image" content="https://sangamthapa2892.github.io/my-portfolio/images/preview.jpg">
 
+    <!-- animate elements on scroll -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- fav icon -->
+
     <link rel="canonical" href="https://sangamthapa2892.github.io/my-portfolio/">
     <link rel="stylesheet" href="https://sangamthapa2892.github.io/my-portfolio/css/style.css" />
+    <link rel="icon" href="https://sangamthapa2892.github.io/my-portfolio/images/favicon.ico" type="image/x-icon">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-MtUVCvDpMDT0ZofGhOMWazRAZQx9GZwQ3f+zDOozKmRlm1ZfzkbwDxPAwLbYx6Lf+abpHOb7eOL1lYxuHz+HzA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="main-container">
+    <div data-aos="fade-up" class="main-container">
         <nav class="navbar">
             <div class="logo">Sangam</div>
             <div class="nav-items">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home"><i class="fa-solid fa-house-user"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-rocket"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -65,7 +74,7 @@
                 <p>Beyond coding, I enjoy hiking, listening to music, and sketching UI ideas for side projects.</p>
 
                 <!-- Resume Button -->
-                <a href="#" download class="resume-btn">Download Resume</a>
+                <a href="https://sangamthapa2892.github.io/my-portfolio/docs/resume.pdf" download class="resume-btn">Download Resume</a>
                 </div>
             </div>
 
@@ -149,19 +158,22 @@
                 <p>Have a project in mind or just want to say hi? Fill out the form below or reach me via social links.</p>
 
                 <form class="contact-form" action="https://formsubmit.co/uniqsangam1@gmail.com" method="POST">
+                <label for="name">Name</label>
                 <input type="text" name="name" placeholder="Your Name" required />
+                <label for="email">Email</label>
                 <input type="email" name="email" placeholder="Your Email" required />
+                <label for="message">Message</label>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
 
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+                <input type="hidden" name="_next" value="https://sangamthapa2892.github.io/my-portfolio/thankyou.html">
                 <button type="submit">Send Message</button>
                 </form>
 
                 <!-- Optional: Social Links -->
                 <div class="social-links">
-                <a href="https://github.com/sangamthapa2892" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/sangam-thapa-b167572ab" target="_blank">LinkedIn</a>
+                <a href="https://github.com/sangamthapa2892" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                <a href="https://linkedin.com/in/sangam-thapa-b167572ab" target="_blank"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
                 </div>
             </div>
         </section>
@@ -179,9 +191,9 @@
                 <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-social">
-                <a href="https://github.com/sangamthapa2892" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://linkedin.com/in/sangam-thapa-b167572ab" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="#">Back to top</a>
+                <a href="https://github.com/sangamthapa2892" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>GitHub</a>
+                <a href="https://linkedin.com/in/sangam-thapa-b167572ab" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+                <a href="#home">Back to top</a>
                 </div>
             </div>
             <div class="footer-copy">
@@ -189,5 +201,8 @@
             </div>
         </footer>
     </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

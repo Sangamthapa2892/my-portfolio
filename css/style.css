@@ -2,7 +2,8 @@
             box-sizing: border-box;
         }
         html {
-            scroll-padding-top: 100px; /* height of your sticky navbar */
+            scroll-padding-top: 100px; /* height of sticky navbar */
+            scroll-behavior: smooth;
             
         }
         html,body{
