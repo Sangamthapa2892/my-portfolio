@@ -84,16 +84,21 @@
             min-height: 100vh;
         }
         /* home */
-        .home-section {
+       .home-section {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f9f9f9;
-            background: linear-gradient(to right, #1e3c72, #2a5298);
             color: white;
             text-align: center;
             padding: 0 20px;
+
+            /* Background image with gradient overlay */
+            background-image: 
+                url("https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?_gl=1*1t0rb49*_ga*MTEzNTY1NDY5Ni4xNzUwODU5NTU5*_ga_8JE65Q40S6*czE3NTM1MDg3NzMkbzckZzEkdDE3NTM1MDg4NTEkajU1JGwwJGgw");  /* Adjust path if needed */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .home-content h1 {
@@ -148,8 +153,8 @@
         }
 
         .profile-pic img {
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid #00bcd4;
@@ -382,7 +387,7 @@
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: background-color 0.3s;
         }
 
         .contact-form button:hover {
