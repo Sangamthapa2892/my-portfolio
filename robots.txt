@@ -1,0 +1,6 @@
+txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://sangamthapa2892.github.io/my-portfolio/sitemap.xml
